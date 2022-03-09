@@ -16,7 +16,7 @@ app.get('/login', (req, res) => {
 
 app.get('/hello', (req, res) => {
     const name = req.cookies.name;
-    res.status(200).send(`Hello, ${name}`);
+    res.status(200).send(`Hello, ${name}!`);
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
